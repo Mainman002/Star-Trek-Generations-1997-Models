@@ -1,0 +1,84 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://jqie5wyy40mn"
+path="res://.godot/imported/Ambargosa_Station.glb-ae74b92e17d06056028b925e3ba856ee.scn"
+
+[deps]
+
+source_file="res://Models/Complete_Levels/Ambargosa_Station/Ambargosa_Station.glb"
+dest_files=["res://.godot/imported/Ambargosa_Station.glb-ae74b92e17d06056028b925e3ba856ee.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=2
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+_subresources={
+"materials": {
+"Black": {
+"use_external/enabled": true,
+"use_external/path": "uid://dpf7ylwv3yu8m"
+},
+"Enterprise_D": {
+"use_external/enabled": true,
+"use_external/path": "uid://do5rx77i081c6"
+},
+"Grey": {
+"use_external/enabled": true,
+"use_external/path": "uid://5chvp2jv2tpx"
+},
+"Light": {
+"use_external/enabled": true,
+"use_external/path": "uid://d0mn3v6oyfem8"
+},
+"Solid_Black": {
+"use_external/enabled": true,
+"use_external/path": "uid://br6jnqquh7agc"
+},
+"metal_perforated_triangles": {
+"use_external/enabled": true,
+"use_external/path": "uid://c8e0bpt7lijtp"
+},
+"metal_shutter_used": {
+"use_external/enabled": true,
+"use_external/path": "uid://clgkew8hhc3my"
+},
+"plastic_ultra_matte_grain_rough": {
+"use_external/enabled": true,
+"use_external/path": "uid://dm880vpfw7cyd"
+},
+"shark_skin_fabric": {
+"use_external/enabled": true,
+"use_external/path": "uid://cbmvfagctkl4y"
+},
+"steel_corten": {
+"use_external/enabled": true,
+"use_external/path": "uid://de68il07yn448"
+},
+"titanium_brushed": {
+"use_external/enabled": true,
+"use_external/path": "uid://bxky66tya8kjw"
+}
+}
+}
+gltf/naming_version=1
+gltf/embedded_image_handling=0

@@ -1,0 +1,132 @@
+[gd_scene load_steps=10 format=3 uid="uid://kspjf3as235m"]
+
+[ext_resource type="PackedScene" uid="uid://bb4i6mcso23jw" path="res://Models/Level_Props/Turbolifts/Ambargosa_Station_Turbolift.glb" id="1_7okug"]
+[ext_resource type="Script" uid="uid://337w6yk8hj20" path="res://Models/Level_Props/Turbolifts/Scripts/Ambargosa_Turbolift.gd" id="1_qgmjr"]
+[ext_resource type="PackedScene" uid="uid://b155l537ovypg" path="res://Models/Level_Props/Turbolifts/Ambargosa_Station_Turbolift_Shaft.glb" id="2_bn42w"]
+[ext_resource type="PackedScene" uid="uid://c4p6id58tnw4u" path="res://Models/Level_Props/Turbolifts/Ambargosa_Turbolift_Door.tscn" id="3_rderd"]
+[ext_resource type="FontFile" uid="uid://biol3pe1srtvc" path="res://Fonts/Obitron/static/Orbitron-Medium.ttf" id="4_jk86s"]
+[ext_resource type="Script" uid="uid://dr64bfcmwil7l" path="res://Models/Level_Props/Turbolifts/Scripts/Turbolift_Door_Interaction.gd" id="5_a308j"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_a308j"]
+size = Vector2(0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a308j"]
+size = Vector3(0.973473, 2.59229, 1.04712)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dxuds"]
+size = Vector3(1.84115, 2.59229, 1.79688)
+
+[node name="Ambargosa_Turbolift" type="Node3D" node_paths=PackedStringArray("labels", "interact_areas")]
+script = ExtResource("1_qgmjr")
+labels = [NodePath("Ambargosa_Station_Turbolift/Control_Panel_Area3D/Interact_Label3D"), NodePath("Floor1_Area3D/Interact_Label3D"), NodePath("Floor2_Area3D/Interact_Label3D")]
+interact_areas = [NodePath("Ambargosa_Station_Turbolift/Control_Panel_Area3D"), NodePath("Floor1_Area3D"), NodePath("Floor2_Area3D")]
+
+[node name="Ambargosa_Station_Turbolift_Shaft" parent="." instance=ExtResource("2_bn42w")]
+
+[node name="Ambargosa_Station_Turbolift" parent="." instance=ExtResource("1_7okug")]
+
+[node name="Control_Panel_Area3D" type="Area3D" parent="Ambargosa_Station_Turbolift"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("5_a308j")
+toggle = true
+
+[node name="Panel_Mesh" type="MeshInstance3D" parent="Ambargosa_Station_Turbolift/Control_Panel_Area3D"]
+transform = Transform3D(-2.62855e-08, 0.601341, -0.798993, -1, -4.37114e-08, 0, -3.49251e-08, 0.798993, 0.601341, -0.654057, 1.58917, -1.03767)
+mesh = SubResource("PlaneMesh_a308j")
+skeleton = NodePath("../..")
+
+[node name="Interact_Label3D" type="Label3D" parent="Ambargosa_Station_Turbolift/Control_Panel_Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.667045, 1.57406, -1.05263)
+visibility_range_begin = 0.6
+visibility_range_begin_margin = 0.1
+visibility_range_end = 2.0
+visibility_range_end_margin = 0.1
+visibility_range_fade_mode = 1
+billboard = 2
+double_sided = false
+no_depth_test = true
+modulate = Color(0.898875, 0.767613, 0.552397, 1)
+outline_modulate = Color(0.119, 0.0894897, 6.01634e-09, 1)
+text = "Interact"
+font = ExtResource("4_jk86s")
+font_size = 24
+uppercase = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ambargosa_Station_Turbolift/Control_Panel_Area3D"]
+transform = Transform3D(0.645044, 0, -0.764145, 0, 1, 0, 0.764145, 0, 0.645044, -0.361179, 1.39321, -0.8355)
+shape = SubResource("BoxShape3D_a308j")
+
+[node name="Ambargosa_Turbolift_Door" parent="." instance=ExtResource("3_rderd")]
+
+[node name="Ambargosa_Turbolift_Door2" parent="." instance=ExtResource("3_rderd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.48, 0)
+
+[node name="1st_floor_M3D" type="Marker3D" parent="."]
+
+[node name="2nd_floor_M3D" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.5, 0)
+
+[node name="Floor1_Area3D" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("5_a308j")
+current_floor = 1
+
+[node name="Interact_Label3D" type="Label3D" parent="Floor1_Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.22463, 1.69014, 0)
+visibility_range_begin = 0.6
+visibility_range_begin_margin = 0.1
+visibility_range_end = 2.0
+visibility_range_end_margin = 0.1
+visibility_range_fade_mode = 1
+billboard = 2
+double_sided = false
+no_depth_test = true
+modulate = Color(0.898875, 0.767613, 0.552397, 1)
+outline_modulate = Color(0.119, 0.0894897, 6.01634e-09, 1)
+text = "Interact"
+font = ExtResource("4_jk86s")
+font_size = 24
+uppercase = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor1_Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.26758, 1.39321, 0)
+shape = SubResource("BoxShape3D_dxuds")
+
+[node name="Floor2_Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.5, 0)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("5_a308j")
+
+[node name="Interact_Label3D" type="Label3D" parent="Floor2_Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.22463, 1.69014, 0)
+visibility_range_begin = 0.6
+visibility_range_begin_margin = 0.1
+visibility_range_end = 2.0
+visibility_range_end_margin = 0.1
+visibility_range_fade_mode = 1
+billboard = 2
+double_sided = false
+no_depth_test = true
+modulate = Color(0.898875, 0.767613, 0.552397, 1)
+outline_modulate = Color(0.119, 0.0894897, 6.01634e-09, 1)
+text = "Interact"
+font = ExtResource("4_jk86s")
+font_size = 24
+uppercase = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor2_Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.25812, 1.39321, 0)
+shape = SubResource("BoxShape3D_dxuds")
+
+[connection signal="interact_toggle" from="Ambargosa_Station_Turbolift/Control_Panel_Area3D" to="." method="interact_toggle"]
+[connection signal="call_turbolift" from="Floor1_Area3D" to="." method="call_turbolift"]
+[connection signal="interact" from="Floor1_Area3D" to="." method="interact"]
+[connection signal="left_interact" from="Floor1_Area3D" to="Ambargosa_Turbolift_Door" method="close_door"]
+[connection signal="call_turbolift" from="Floor2_Area3D" to="." method="call_turbolift"]
+[connection signal="interact" from="Floor2_Area3D" to="." method="interact"]
+[connection signal="left_interact" from="Floor2_Area3D" to="Ambargosa_Turbolift_Door2" method="close_door"]
+
+[editable path="Ambargosa_Station_Turbolift"]
