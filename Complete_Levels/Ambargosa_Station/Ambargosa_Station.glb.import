@@ -34,10 +34,6 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "materials": {
-"Black": {
-"use_external/enabled": true,
-"use_external/path": "uid://dpf7ylwv3yu8m"
-},
 "Enterprise_D": {
 "use_external/enabled": true,
 "use_external/path": "uid://do5rx77i081c6"
