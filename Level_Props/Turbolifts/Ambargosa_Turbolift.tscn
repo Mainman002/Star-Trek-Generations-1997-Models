@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://kspjf3as235m"]
+[gd_scene load_steps=11 format=3 uid="uid://kspjf3as235m"]
 
 [ext_resource type="PackedScene" uid="uid://bb4i6mcso23jw" path="res://Models/Level_Props/Turbolifts/Ambargosa_Station_Turbolift.glb" id="1_7okug"]
 [ext_resource type="Script" uid="uid://337w6yk8hj20" path="res://Models/Level_Props/Turbolifts/Scripts/Ambargosa_Turbolift.gd" id="1_qgmjr"]
@@ -6,9 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://c4p6id58tnw4u" path="res://Models/Level_Props/Turbolifts/Ambargosa_Turbolift_Door.tscn" id="3_rderd"]
 [ext_resource type="FontFile" uid="uid://biol3pe1srtvc" path="res://Fonts/Obitron/static/Orbitron-Medium.ttf" id="4_jk86s"]
 [ext_resource type="Script" uid="uid://dr64bfcmwil7l" path="res://Models/Level_Props/Turbolifts/Scripts/Turbolift_Door_Interaction.gd" id="5_a308j"]
+[ext_resource type="Material" uid="uid://cx6ocdftu1pkf" path="res://Materials/Textures/LCARS_Turbolift_Panel/LCARS_Turbolift_Panel.tres" id="5_dxuds"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_a308j"]
-size = Vector2(0.5, 0.5)
+material = ExtResource("5_dxuds")
+size = Vector2(0.5, 0.6)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_a308j"]
 size = Vector3(0.973473, 2.59229, 1.04712)
@@ -32,7 +34,7 @@ script = ExtResource("5_a308j")
 toggle = true
 
 [node name="Panel_Mesh" type="MeshInstance3D" parent="Ambargosa_Station_Turbolift/Control_Panel_Area3D"]
-transform = Transform3D(-2.62855e-08, 0.601341, -0.798993, -1, -4.37114e-08, 0, -3.49251e-08, 0.798993, 0.601341, -0.654057, 1.58917, -1.03767)
+transform = Transform3D(0.798993, 0.601341, 2.98023e-08, 4.37114e-08, -2.98023e-08, -1, -0.601341, 0.798993, 2.98023e-08, -0.654057, 1.58917, -1.03767)
 mesh = SubResource("PlaneMesh_a308j")
 skeleton = NodePath("../..")
 

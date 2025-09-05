@@ -5,7 +5,7 @@ extends Node3D
 @export var labels:Array[Node]
 @export var interact_areas:Array[Node]
 
-var can_interact:bool = true
+var can_interact:bool = false
 var silent_move:bool = false
 var current_door:int = -1
 var target_y: float = 0.0
