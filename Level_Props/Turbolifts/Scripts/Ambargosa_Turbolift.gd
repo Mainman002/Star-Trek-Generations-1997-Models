@@ -65,6 +65,7 @@ func call_turbolift( _floor:int ) -> void:
 		silent_move = true
 		can_interact = false
 		current_floor = _floor
+		move_speed = 20
 		match current_floor:
 			0:
 				change_floor(1)
@@ -99,5 +100,6 @@ func _on_reached_floor(_floor: int) -> void:
 						door_2.open_door()
 
 		current_door = _floor
+	move_speed = 2
 	can_interact = true
 	silent_move = false

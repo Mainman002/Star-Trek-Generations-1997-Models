@@ -42,13 +42,17 @@ _subresources={
 "use_external/enabled": true,
 "use_external/path": "uid://5chvp2jv2tpx"
 },
-"metal_shutter_used": {
+"Light": {
 "use_external/enabled": true,
-"use_external/path": "uid://ubkyssgwocwb"
+"use_external/path": "uid://d0mn3v6oyfem8"
 },
 "shark_skin_fabric": {
 "use_external/enabled": true,
 "use_external/path": "uid://cbmvfagctkl4y"
+},
+"titanium_brushed": {
+"use_external/enabled": true,
+"use_external/path": "uid://bxky66tya8kjw"
 }
 }
 }

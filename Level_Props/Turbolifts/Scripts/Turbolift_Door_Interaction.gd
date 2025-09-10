@@ -36,6 +36,7 @@ func _input(_event: InputEvent) -> void:
 
 func area_entered( _body ) -> void:
 	if _body.is_in_group("PlayerCharacter"):
+		_body.jumpLock = true
 		can_interact = true
 		$Interact_Label3D.visible = true
 		emit_signal("call_turbolift", current_floor)
@@ -43,6 +44,7 @@ func area_entered( _body ) -> void:
 
 func area_exited( _body ) -> void:
 	if _body.is_in_group("PlayerCharacter"):
+		_body.jumpLock = false
 		can_interact = false
 		$Interact_Label3D.visible = false
 		emit_signal("left_interact")
