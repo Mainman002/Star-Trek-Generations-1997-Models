@@ -1,0 +1,45 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://nhoaupgo0h8i"
+path.s3tc="res://.godot/imported/Bookshelf_paper_parchment_worn_normal.png-6c5429fe04e849c64bd7d4ca5f36b086.s3tc.ctex"
+path.etc2="res://.godot/imported/Bookshelf_paper_parchment_worn_normal.png-6c5429fe04e849c64bd7d4ca5f36b086.etc2.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "5ae7d48bbdc7b78f27ce561f6414392e"
+}
+
+[deps]
+
+source_file="res://Models/Modular_Dungeon/glb/Props/Bookshelf_paper_parchment_worn_normal.png"
+dest_files=["res://.godot/imported/Bookshelf_paper_parchment_worn_normal.png-6c5429fe04e849c64bd7d4ca5f36b086.s3tc.ctex", "res://.godot/imported/Bookshelf_paper_parchment_worn_normal.png-6c5429fe04e849c64bd7d4ca5f36b086.etc2.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://Models/Modular_Dungeon/glb/Props/Bookshelf_paper_parchment_worn_normal.png"
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

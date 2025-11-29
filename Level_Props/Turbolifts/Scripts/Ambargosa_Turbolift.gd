@@ -51,13 +51,19 @@ func interact( _floor:int ) -> void:
 	if can_interact and not locked:
 		can_interact = false
 		current_floor = _floor
+
+		door_1.close_door()
+		door_2.close_door()
+
+		await get_tree().create_timer(0.5).timeout
+
 		match current_floor:
 			0:
 				change_floor(1)
-				door_2.open_door()
+				#door_2.open_door()
 			1:
 				change_floor(0)
-				door_1.open_door()
+				#door_1.open_door()
 
 
 func call_turbolift( _floor:int ) -> void:
@@ -76,6 +82,11 @@ func call_turbolift( _floor:int ) -> void:
 func set_floor(_floor: int) -> void:
 	current_floor = _floor
 	#current_door = _floor
+	#door_1.close_door()
+	#door_2.close_door()
+#
+	#await get_tree().create_timer(0.5).timeout
+
 	match _floor:
 		0: target_y = floor1_marker.position.y
 		1: target_y = floor2_marker.position.y

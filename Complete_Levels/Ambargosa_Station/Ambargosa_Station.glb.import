@@ -15,9 +15,11 @@ dest_files=["res://.godot/imported/Ambargosa_Station.glb-ae74b92e17d06056028b925
 
 nodes/root_type=""
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
@@ -32,46 +34,59 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
 _subresources={
 "materials": {
 "Enterprise_D": {
 "use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Textures/Enterprise_D/Enterprise_D.material",
 "use_external/path": "uid://do5rx77i081c6"
 },
 "Grey": {
 "use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Solid/Matte_Grey.material",
 "use_external/path": "uid://5chvp2jv2tpx"
 },
 "Light": {
 "use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Emissive/Light_White.material",
 "use_external/path": "uid://d0mn3v6oyfem8"
 },
 "Solid_Black": {
 "use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Solid/Solid_Black.material",
 "use_external/path": "uid://br6jnqquh7agc"
 },
 "metal_perforated_triangles": {
 "use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Textures/metal_perforated_triangles/metal_perforated_triangles.material",
 "use_external/path": "uid://c8e0bpt7lijtp"
 },
 "metal_shutter_used": {
 "use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Textures/iron_curtain/iron_curtain.material",
 "use_external/path": "uid://clgkew8hhc3my"
 },
 "plastic_ultra_matte_grain_rough": {
 "use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Textures/plastic_ultra_matte_grain_rough/plastic_ultra_matte_grain_rough.material",
 "use_external/path": "uid://dm880vpfw7cyd"
 },
 "shark_skin_fabric": {
 "use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Textures/shark_skin_fabric/shark_skin_fabric.material",
 "use_external/path": "uid://cbmvfagctkl4y"
 },
 "steel_corten": {
 "use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Textures/steel_corten/steel_corten.material",
 "use_external/path": "uid://de68il07yn448"
 },
 "titanium_brushed": {
 "use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Textures/titanium_brushed/titanium_brushed.material",
 "use_external/path": "uid://bxky66tya8kjw"
 }
 }

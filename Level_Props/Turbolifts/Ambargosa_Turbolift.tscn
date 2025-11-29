@@ -39,7 +39,9 @@ mesh = SubResource("PlaneMesh_a308j")
 skeleton = NodePath("../..")
 
 [node name="Interact_Label3D" type="Label3D" parent="Ambargosa_Station_Turbolift/Control_Panel_Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.667045, 1.57406, -1.05263)
+transform = Transform3D(0.61076725, 0, -0.79181015, 0, 1, 0, 0.79181015, 0, 0.61076725, -0.43012857, 1.57406, -0.7541775)
+layers = 2
+sorting_offset = 5.0
 visibility_range_begin = 0.6
 visibility_range_begin_margin = 0.1
 visibility_range_end = 2.0
@@ -47,7 +49,7 @@ visibility_range_end_margin = 0.1
 visibility_range_fade_mode = 1
 billboard = 2
 double_sided = false
-no_depth_test = true
+render_priority = 5
 modulate = Color(0.898875, 0.767613, 0.552397, 1)
 outline_modulate = Color(0.119, 0.0894897, 6.01634e-09, 1)
 text = "Interact"
@@ -76,7 +78,9 @@ script = ExtResource("5_a308j")
 current_floor = 1
 
 [node name="Interact_Label3D" type="Label3D" parent="Floor1_Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.22463, 1.69014, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6016359, 1.69014, 0)
+layers = 2
+sorting_offset = 5.0
 visibility_range_begin = 0.6
 visibility_range_begin_margin = 0.1
 visibility_range_end = 2.0
@@ -84,7 +88,7 @@ visibility_range_end_margin = 0.1
 visibility_range_fade_mode = 1
 billboard = 2
 double_sided = false
-no_depth_test = true
+render_priority = 5
 modulate = Color(0.898875, 0.767613, 0.552397, 1)
 outline_modulate = Color(0.119, 0.0894897, 6.01634e-09, 1)
 text = "Interact"
@@ -103,7 +107,9 @@ collision_mask = 2
 script = ExtResource("5_a308j")
 
 [node name="Interact_Label3D" type="Label3D" parent="Floor2_Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.22463, 1.69014, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6016359, 1.69014, 0)
+layers = 2
+sorting_offset = 5.0
 visibility_range_begin = 0.6
 visibility_range_begin_margin = 0.1
 visibility_range_end = 2.0
@@ -111,7 +117,7 @@ visibility_range_end_margin = 0.1
 visibility_range_fade_mode = 1
 billboard = 2
 double_sided = false
-no_depth_test = true
+render_priority = 5
 modulate = Color(0.898875, 0.767613, 0.552397, 1)
 outline_modulate = Color(0.119, 0.0894897, 6.01634e-09, 1)
 text = "Interact"
